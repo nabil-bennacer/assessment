@@ -45,9 +45,7 @@ const PostList = () => {
         const uniqueCategories = Array.from(categoriesMap.values())
           .sort((a, b) => a.name.localeCompare(b.name)); // Sort by name
         
-        // console.log('Total categories found:', totalCategoriesFound);
-        // console.log('Unique categories:', uniqueCategories.length);
-        // console.log('Category names:', uniqueCategories.map(c => c.name));
+        
         setAllCategories(uniqueCategories);
         
         setIsLoading(false);
